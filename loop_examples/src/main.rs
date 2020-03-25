@@ -2,6 +2,8 @@ fn main() {
     loop_return_value_from_loop();
 
     iterate_through_array();
+
+    lift_off_loop();
 }
 
 fn loop_return_value_from_loop() {
@@ -24,4 +26,11 @@ fn iterate_through_array() {
     for element in a.iter() {
         println!("Value is {}", element);
     }
+}
+
+fn lift_off_loop() {
+    for number in (1..100).rev() {
+        println!("{}", number);
+    }
+    println!("LIFTOFF!!!")
 }
