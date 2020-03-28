@@ -1,7 +1,16 @@
 fn main() {
-    let s = String::from("Bubu Zuzu");
-    let s1 = &s[..2];
-    let s2 = &s[3..];
+    let s = String::from("BubuZuzu");
+    println!("the first word in {} is {}", s, first_word(&s));
+}
 
-    println!("Slice values {} and {}", s1, s2);
+
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[..i];
+        }
+    }
+    &s[..]
 }
