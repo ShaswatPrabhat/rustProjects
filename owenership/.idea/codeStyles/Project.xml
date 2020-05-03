@@ -1,0 +1,7 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <RsCodeStyleSettings>
+      <option name="SPACE_AROUND_ASSOC_TYPE_BINDING" value="true" />
+    </RsCodeStyleSettings>
+  </code_scheme>
+</component>
